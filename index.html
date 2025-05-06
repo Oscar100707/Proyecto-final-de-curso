@@ -4,103 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Trastornos Alimenticios - Información y Apoyo</title>
-  <style>
-    /* --- Estilos base --- */
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f9f9f9;
-      margin: 0;
-      padding: 0;
-      line-height: 1.7;
-      color: #333;
-      overflow-x: hidden;
-    }
-    header {
-      background: url('https://images.unsplash.com/photo-1612209334408-6e16955b7db5') center/cover no-repeat;
-      color: white;
-      text-align: center;
-      padding: 4rem 2rem;
-      background-blend-mode: darken;
-      background-color: rgba(0, 0, 0, 0.5);
-      animation: fadeIn 2s ease-out forwards;
-      opacity: 0;
-    }
-    header h1 {
-      font-size: 3rem;
-      margin: 0;
-    }
-    header p {
-      font-size: 1.2rem;
-    }
-    section {
-      max-width: 1100px;
-      margin: 2rem auto;
-      padding: 0 1.5rem;
-      opacity: 0;
-      transform: translateY(50px);
-      animation: fadeUp 1s ease forwards;
-      animation-delay: var(--delay, 0s);
-    }
-    h2, h3 {
-      color: #5d5dff;
-    }
-    ul {
-      padding-left: 1.5rem;
-    }
-    .image-container {
-      text-align: center;
-      margin: 2rem 0;
-    }
-    img {
-      width: 90%;
-      border-radius: 15px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    img:hover {
-      transform: scale(1.05);
-      box-shadow: 0 6px 15px rgba(0,0,0,0.5);
-    }
-    .testimonies {
-      background-color: #eef2ff;
-      border-left: 5px solid #5d5dff;
-      margin: 2rem 0;
-      padding: 1rem 2rem;
-      border-radius: 8px;
-    }
-    footer {
-      background-color: #5d5dff;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 3rem;
-    }
-
-    /* --- Animaciones --- */
-    @keyframes fadeIn {
-      to {
-        opacity: 1;
-      }
-    }
-
-    @keyframes fadeUp {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    /* --- Scroll animations --- */
-    .scroll-reveal {
-      opacity: 0;
-      transform: translateY(50px);
-      transition: all 0.8s ease;
-    }
-    .scroll-reveal.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -109,9 +13,20 @@
   <p>Entiende, acompaña y ayuda a combatirlos</p>
 </header>
 
-<section class="scroll-reveal" style="--delay: 0.5s;">
+<nav>
+  <ul>
+    <li><a href="#que-son">¿Qué son?</a></li>
+    <li><a href="#tipos">Tipos</a></li>
+    <li><a href="#recomendaciones">Recomendaciones</a></li>
+    <li><a href="#testimonios">Testimonios</a></li>
+    <li><a href="#ayuda">¿Dónde pedir ayuda?</a></li>
+    <li><a href="#formulario">Formulario</a></li>
+  </ul>
+</nav>
+
+<section id="que-son" class="scroll-reveal" style="--delay: 0.5s;">
   <h2>¿Qué son los Trastornos Alimenticios?</h2>
-  <p>Los trastornos alimenticios son enfermedades graves que provocan alteraciones importantes en los hábitos alimenticios y en la percepción del propio cuerpo. Aunque suelen comenzar en la adolescencia, pueden afectar a personas de cualquier edad, género o trasfondo cultural.</p>
+  <p>Son un trastorno de salud mental que pueden acarrear graves consecuencias en la salud física y mental de quien los padece. En los más comunes, como son el caso de la anorexia, la bulimia o el trastorno por atracón, hay una obsesión común por el peso corporal, la imagen y la dieta. Aunque existen otros como la vigorexia, la adicción a la comida o, incluso, la obesidad..</p>
   <p>Las causas son multifactoriales: incluyen factores genéticos, psicológicos, sociales y culturales.</p>
 
   <div class="image-container">
@@ -119,7 +34,7 @@
   </div>
 </section>
 
-<section class="scroll-reveal" style="--delay: 1s;">
+<section id="tipos" class="scroll-reveal" style="--delay: 1s;">
   <h2>Tipos de Trastornos Alimenticios</h2>
 
   <h3>Anorexia Nerviosa</h3>
@@ -155,13 +70,12 @@
   <h3>Diabulimia</h3>
   <p>Le pasa a algunas personas con diabetes tipo 1: dejan de ponerse insulina a propósito para perder peso, aunque saben que es peligrosísimo para su salud.</p>
 
-
   <div class="image-container">
-    <img src="https://sdmntpreastus2.oaiusercontent.com/files/00000000-e890-61f6-9aae-acd9a099baed/raw?se=2025-04-28T10%3A51%3A01Z&sp=r&sv=2024-08-04&sr=b&scid=99097bac-c23f-5597-9723-7c6808a3fbe3&skoid=3f3a9132-9530-48ef-96b7-fee5a811733f&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-04-28T05%3A14%3A16Z&ske=2025-04-29T05%3A14%3A16Z&sks=b&skv=2024-08-04&sig=/z2r2pbZ7nsB%2BzZ7N6bzsxVbG1J6k2p%2B6XtF9orpMiM%3D" alt="Tipos de trastornos alimenticios">
+    <img src="imagen/trastornos alimenticios.png" alt="Tipos de trastornos alimenticios">
   </div>
 </section>
 
-<section class="scroll-reveal" style="--delay: 1.5s;">
+<section id="recomendaciones" class="scroll-reveal" style="--delay: 1.5s;">
   <h2>¿Qué recomiendan los expertos?</h2>
   <ul>
     <li><strong>Buscar ayuda profesional temprana:</strong> psicólogos, psiquiatras y nutricionistas especializados en trastornos alimenticios.</li>
@@ -177,28 +91,26 @@
   </div>
 </section>
 
-<section class="scroll-reveal" style="--delay: 2s;">
+<section id="testimonios" class="scroll-reveal" style="--delay: 2s;">
   <h2>Testimonios Reales</h2>
-
   <div class="testimonies">
-    <p><strong>Lucía, 22 años:</strong> "La anorexia me robó años de mi vida. Pedir ayuda fue duro, pero ahora sé que merezco cuidar de mi cuerpo."</p>
+    <p><strong>Paula:</strong> "A día de hoy puedo decir que vivo feliz y tranquila. Me siento fuerte, confío en mí misma, me valoro y me respeto. Tengo ganas de vivir y de disfrutar todo. La vida al final tiene momentos malos para todo el mundo, pero la comprensión que me doy ahora es fundamental para poder llevarlos de la mejor forma"</p>
   </div>
 
   <div class="testimonies">
-    <p><strong>Marcos, 29 años:</strong> "Con la terapia pude entender que mi valor no dependía de mi peso. Hoy celebro mis pequeños avances."</p>
+    <p><strong>Alejandra, 17 años:</strong> “A día de hoy estoy venciendo a la anorexia y lo puedo decir con certeza”</p>
   </div>
 
   <div class="testimonies">
-    <p><strong>Ana, madre de paciente:</strong> "Como familia, aprendimos a acompañar sin juzgar. La empatía fue nuestra mejor herramienta."</p>
+    <p><strong>Carmen, madre de paciente:</strong>"Me prometí que mi hija saldría de ello, que su salud física y mental eran mi gran cometido. Que su lucha iba a ser mi gran propósito vital."</p>
   </div>
 
   <div class="image-container">
-    <img src="https://images.unsplash.com/photo-1507652955-f3dcef5a3be4" alt="Historias de recuperación">
-    <p><em>Fuente: Unsplash</em></p>
+    <img src="https://imgs.search.brave.com/V6NGbXSNKrpLbURnJqTsIkhMAPclCqfow6HoTquLrZw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/Y2xpbmljYWN0YS5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MTYvMDcvQ2xpbmlj/YS1DVEEtdGVzdGlt/b25pb3MtbWluLmpw/Zw" alt="testimonios">
   </div>
 </section>
 
-<section class="scroll-reveal" style="--delay: 2.5s;">
+<section id="ayuda" class="scroll-reveal" style="--delay: 2.5s;">
   <h2>¿Dónde pedir ayuda?</h2>
   <p>Si tú o alguien que conoces sufre un trastorno alimenticio, puedes contactar con:</p>
   <ul>
@@ -206,16 +118,56 @@
     <li><strong>Centros de salud mental:</strong> solicita ayuda a tu médico de cabecera para derivaciones especializadas.</li>
     <li><strong>Líneas de apoyo 24h:</strong> muchas organizaciones ofrecen líneas telefónicas de ayuda urgente.</li>
   </ul>
+
+  <div class="image-container">
+    <img src="https://imgs.search.brave.com/6Gc1EgXRAyiOFSIH_KgsTeP7aAxcizoupuaBqV3AWYs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/eGlzY2F0LmNhdC93/cC1jb250ZW50L3Vw/bG9hZHMvMjAxOS8w/OS9ncmFub2xsZXJz/LTAxLmpwZw" alt="Lugares a los que acudir">
+  </div>
+</section>
+
+<section id="formulario" class="scroll-reveal" style="--delay: 3s;">
+  <h2>Formulario de Contacto</h2>
+  <p>Si necesitas ayuda o deseas recibir más información, completa el siguiente formulario:</p>
+  <form style="max-width: 600px; margin: auto;">
+    <label for="nombre">Nombre completo:</label><br>
+    <input type="text" id="nombre" name="nombre" required style="width:100%; padding:8px; margin:8px 0;"><br>
+
+    <label for="email">Correo electrónico:</label><br>
+    <input type="email" id="email" name="email" required style="width:100%; padding:8px; margin:8px 0;"><br>
+
+    <label for="mensaje">Mensaje / Consulta:</label><br>
+    <textarea id="mensaje" name="mensaje" rows="5" required style="width:100%; padding:8px; margin:8px 0;"></textarea><br>
+
+    <button type="submit" style="background-color:#5d5dff; color:white; padding:10px 20px; border:none; border-radius:5px;">Enviar</button>
+  </form>
 </section>
 
 <footer>
-  <p>© 2025 Página de Concienciación sobre Trastornos Alimenticios</p>
+  <div class="redes sociales">
+      <li>
+        <a href="https://www.instagram.com/">
+          <img src="https://imgs.search.brave.com/Mxh8zByS8POeT70A1aN3UEh3FzmM-qF4bQM-qwAoz6M/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy90/aHVtYi85Lzk1L0lu/c3RhZ3JhbV9sb2dv/XzIwMjIuc3ZnLzI1/MHB4LUluc3RhZ3Jh/bV9sb2dvXzIwMjIu/c3ZnLnBuZw" alt="Instagram" >
+        </a> 
+      </li>
+      <li>
+        <a href="https://www.facebook.com/">
+          <img src="https://imgs.search.brave.com/FUWEcyC8ISzobxF7cnrKQSk_Uegq2QmN0YZ7tWQaoIU/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy90/aHVtYi9iL2I5LzIw/MjNfRmFjZWJvb2tf/aWNvbi5zdmcvMjUw/cHgtMjAyM19GYWNl/Ym9va19pY29uLnN2/Zy5wbmc" alt="Facebook">
+        </a>
+      </li>
+      <li>
+        <a href="https://x.com/">
+          <img src="https://imgs.search.brave.com/i2IP1LXWFBCC7pYw2mjvGvYVwKguOcRbqYkQeFts1D4/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy90/aHVtYi9jL2NlL1hf/bG9nb18yMDIzLnN2/Zy8yNTBweC1YX2xv/Z29fMjAyMy5zdmcu/cG5n" alt="Twitter">
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <img src="" alt="">
+        </a>
+      </li>
+  </div>
 </footer>
 
 <script>
-  // --- JavaScript simple para hacer scroll-reveal ---
   const sections = document.querySelectorAll('.scroll-reveal');
-
   const showOnScroll = () => {
     const triggerBottom = window.innerHeight * 0.85;
     sections.forEach(section => {
@@ -227,9 +179,8 @@
       }
     });
   };
-
   window.addEventListener('scroll', showOnScroll);
-  showOnScroll(); // inicial
+  showOnScroll();
 </script>
 
 </body>

@@ -87,6 +87,17 @@ body {
     padding: 1rem 2rem;
     border-radius: 8px;
   }
+#formulario{
+    max-width: 600px; 
+    margin: auto;
+  }
+  button{
+    background-color:#5d5dff; 
+    color:white; 
+    padding:10px 20px; 
+    border:none; 
+    border-radius:5px;
+  }
   footer {
     background-color: #5d5dff;
     color: white;
@@ -118,4 +129,12 @@ body {
   .scroll-reveal.visible {
     opacity: 1;
     transform: translateY(0);
+  }
+  .redes-sociales{
+    gap: 10px;
+    height: auto;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }

@@ -26,14 +26,14 @@ body {
     font-size: 1.2rem;
   }
 
-  nav {
+  .Navegación{
     background-color: #5d5dff;
     position: sticky;
     top: 0;
     z-index: 1000;
     padding: 0.5rem 0;
   }
-  nav ul {
+  .Navegación ul {
     list-style: none;
     display: flex;
     justify-content: center;
@@ -41,13 +41,13 @@ body {
     padding: 0;
     gap: 1.5rem;
   }
-  nav ul li a {
+  .Navegación ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
   }
-  nav ul li a:hover {
+  .Navegación ul li a:hover {
     color: #c7c7ff;
   }
 
